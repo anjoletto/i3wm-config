@@ -1,0 +1,87 @@
+# ---------------------------------------------------------------------------- #
+# i3 specific keybinds (common keybinds are desribed in sxhkd configuration)
+# ---------------------------------------------------------------------------- #
+
+# set modkey
+set $mod Mod4
+
+# Mouse+$mod to drag floating windows
+floating_modifier $mod 
+
+# ---------------------------------------------------------------------------- #
+# workspace
+# ---------------------------------------------------------------------------- #
+
+# change to workspace
+bindsym $mod+0 workspace 0
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+
+# move container to workspace
+bindsym $mod+Shift+0 move container to workspace 0
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+  
+# move to other display
+bindsym $mod+s move workspace to output right
+
+# ---------------------------------------------------------------------------- #
+# window
+# ---------------------------------------------------------------------------- #
+
+# kill focused window
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+l focus right
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+
+# move windows
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+s move scratchpad
+bindsym $mod+Control+s scratchpad show
+
+# focus the parent/child container
+bindsym $mod+Shift+Tab   focus parent 
+bindsym $mod+Control+Tab focus child
+
+# change layout
+bindsym $mod+Tab layout toggle splith tabbed
+bindsym $mod+z   fullscreen  toggle 
+bindsym $mod+f   floating toggle
+
+bindsym $mod+v split toggle
+bindsym $mod+t layout tabbed
+bindsym $mod+Shift+Return mark main; \
+                          focus left; \
+                          swap container with mark main; \
+                          focus left
+
+# ---------------------------------------------------------------------------- #
+# restart inplace
+bindsym $mod+Shift+r restart
+
+# exit 
+bindsym $mod+Shift+Escape exit
+
+# ---------------------------------------------------------------------------- #
+
