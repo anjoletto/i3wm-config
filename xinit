@@ -5,10 +5,9 @@
 # start when i3 starts
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id sxhkd
-exec_always --no-startup-id nm-applet --sm-disable --indicator
-exec_always --no-startup-id picom
-
-exec --no-startup-id autorandr --change
+#exec_always --no-startup-id nm-applet --sm-disable --indicator
+#exec_always --no-startup-id picom
+#exec --no-startup-id autorandr --change
 exec --no-startup-id $HOME/.config/kbd/keyboard
 
 # force some windows to floating
@@ -19,7 +18,7 @@ for_window [class="pritunl"] floating enable
 # force some applications to a workspace
 assign [class="^discord$"] workspace 0
 assign [class="^Brave-browser$"] workspace 0
-assign [class="^Spotify$"] workspace 0
+for_window [class="Spotify"] move to workspace 0
 
 # ---------------------------------------------------------------------------- #
 
