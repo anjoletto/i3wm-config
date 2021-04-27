@@ -1,33 +1,35 @@
 # ---------------------------------------------------------------------------- #
 # appearance related configurations
 # ---------------------------------------------------------------------------- #
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 1
 
-## use coding font for everything
-#font pango:FiraCode 1
-#
-## hide borders in edges of screen
-#hide_edge_borders smart
-#
-## remove titlebars and set a space between windows in split
-#set $border_px 5
-#default_border pixel $border_px
-#default_floating_border pixel $border_px
-#
-#set $bg  #2E3440
-#set $bga #BF616A
-#set $bgi #4C566A
-#
-#set $fg  #D8DEE9
-#set $fgi #E5E9F0
-#
-## class                 border background text indicator child_border
-#client.focused          $fg    $fg        $bg  $bg       $fg
-#client.focused_inactive $fg    $fg        $fgi $bg       $fg
-#client.unfocused        $fg    $bg        $fgi $bg       $fg
-#client.urgent           $fg    $bgu       $fg  $fg       $fg
-#client.placeholder      $fg    $fg        $bg  $fg       $fg
-#client.background       $fg    $bg        $fg  $bg       $fg
-#
+# use coding font for everything
+font pango:FiraCode 10
+
+# hide borders in edges of screen
+hide_edge_borders smart
+
+# remove titlebars and set a space between windows in split
+set $border_px 3
+default_border pixel $border_px
+default_floating_border pixel $border_px
+
+
+set $bg  #2e3440
+set $bgf #434c5e
+
+set $fgf #d8dee9
+set $fgu #434c5e
+set $fga #bf616a
+
+# class                 border backg text indicator child_border
+client.focused          $fgf   $bgf  $fgf $bgf      $fgf
+client.focused_inactive $fgf   $bg   $fgf $bg       $fgf
+client.unfocused        $fgu   $bg   $fgu $bg       $fgu
+client.urgent           $fga   $bg   $fga $bg       $fga
+client.placeholder      $fgf   $bg   $fgf $bg       $fgf
+
+client.background       $bg # this one doesn't have any other option
+
 # ---------------------------------------------------------------------------- #
 
