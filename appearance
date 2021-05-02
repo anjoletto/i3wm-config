@@ -3,6 +3,9 @@
 # ---------------------------------------------------------------------------- #
 for_window [class=".*"] border pixel 1
 
+  # make all windows float (if I miss stacking window managers)
+# for_window [class="[.]*"] floating enable
+
 # use coding font for everything
 font pango:FiraCode 10
 
