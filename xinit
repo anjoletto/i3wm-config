@@ -17,7 +17,7 @@ for_window [class="pritunl"] floating enable
 
 # force some applications to a workspace
 assign [class="^discord$"] workspace 0
-assign [class="^Brave-browser$"] workspace 0
+#assign [class="^Brave-browser$"] workspace 0
 for_window [class="Spotify"] move to workspace 0
 
 # ---------------------------------------------------------------------------- #
