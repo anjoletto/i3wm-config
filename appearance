@@ -12,8 +12,11 @@ font pango:FiraCode 0
 # hide borders in edges of screen
 hide_edge_borders smart
 
+# center windows titles
+title_align center
+
 # remove titlebars and set a space between windows in split
-set $border_px 1
+set $border_px 0
 default_border pixel $border_px
 default_floating_border pixel $border_px
 
