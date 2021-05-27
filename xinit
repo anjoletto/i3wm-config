@@ -16,9 +16,12 @@ for_window [class="Blueman-manager"] floating enable
 for_window [class="pritunl"] floating enable
 
 # force some applications to a workspace
-assign [class="^discord$"] workspace 0
-#assign [class="^Brave-browser$"] workspace 0
-for_window [class="Spotify"] move to workspace 0
+assign [class="^discord$"] workspace 1
+assign [class="^Brave-browser$"] workspace 2
+for_window [class="Spotify"] floating enable
 
+# force some workspaces in a screen
+workspace 1 output primary
+workspace 2 output primary
 # ---------------------------------------------------------------------------- #
 
