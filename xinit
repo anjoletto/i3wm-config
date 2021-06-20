@@ -7,6 +7,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id sxhkd
 #exec_always --no-startup-id picom
 exec --no-startup-id autorandr --change
+exec --no-startup-id nm-applet &
+exec --no-startup-id blueman-applet &
 exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id $HOME/.config/kbd/setup
 
@@ -21,7 +23,6 @@ assign [class="^Brave-browser$"] workspace 2
 for_window [class="Spotify"] floating enable
 
 # force some workspaces in a screen
-workspace 1 output primary
-workspace 2 output primary
+workspace 1 output eDP-1 # primary
 # ---------------------------------------------------------------------------- #
 
