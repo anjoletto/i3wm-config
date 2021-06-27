@@ -44,7 +44,7 @@ bindsym $mod+s move workspace to output right
 # ---------------------------------------------------------------------------- #
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # change focus
 bindsym $mod+h focus left
