@@ -21,8 +21,9 @@ for_window [class="pritunl"] floating enable
 assign [class="^discord$"] workspace 1
 assign [class="^Brave-browser$"] workspace 2
 for_window [class="Spotify"] floating enable
+#for_window [class="Spotify"] workspace 3
 
 # force some workspaces in a screen
-workspace 1 output eDP-1 # primary
+workspace 1 output eDP-1
 # ---------------------------------------------------------------------------- #
 
