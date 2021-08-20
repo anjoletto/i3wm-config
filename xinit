@@ -14,14 +14,17 @@ exec --no-startup-id $HOME/.config/kbd/setup
 
 # force some windows to floating
 for_window [class="Arandr"] floating enable
-for_window [class="Blueman-manager"] floating enable
+for_window [class="blueman-manager-wrapped"] floating enable
 for_window [class="pritunl"] floating enable
+for_window [class="Pavucontrol"] floating enable
 
 # force some applications to a workspace
 assign [class="^discord$"] workspace 1
-assign [class="^Brave-browser$"] workspace 2
-for_window [class="Spotify"] floating enable
+#assign [class="^Brave-browser$"] workspace 2
 #for_window [class="Spotify"] workspace 3
+
+for_window [class="^Brave-browser$"] floating enable
+for_window [class="Spotify"] floating enable
 
 # force some workspaces in a screen
 workspace 1 output eDP-1
