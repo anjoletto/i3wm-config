@@ -65,7 +65,7 @@ bindsym $mod+Shift+Tab   focus parent
 bindsym $mod+Control+Tab focus child
 
 # change layout
-bindsym $mod+Tab layout toggle splith stacking splitv
+bindsym $mod+Tab layout toggle splith stacking splitv tabbed
 bindsym $mod+z   fullscreen  toggle 
 bindsym $mod+f   floating toggle
 

@@ -7,7 +7,7 @@ for_window [class=".*"] border pixel 1
 # for_window [class="[.]*"] floating enable
 
 # use coding font for everything
-font pango:FiraCode 0
+font pango:FiraCode 8
 
 # hide borders in edges of screen
 hide_edge_borders smart
@@ -29,7 +29,7 @@ set $fgu #434c5e
 set $fga #bf616a
 
 # class                 border backg text indicator child_border
-client.focused          $fgf   $fgf  $fgf $bgf      $fgf
+client.focused          $fgf   $bgf  $fgf $bgf      $fgf
 client.focused_inactive $fgf   $fbf  $fgf $bg       $fgf
 client.unfocused        $fgu   $bg   $fgu $bg       $fgu
 client.urgent           $fga   $bg   $fga $bg       $fga
