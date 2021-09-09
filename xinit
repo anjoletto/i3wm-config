@@ -9,8 +9,7 @@ exec_always --no-startup-id sxhkd
 exec --no-startup-id autorandr --change
 exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
-exec --no-startup-id pasystray
-exec --no-startup-id $HOME/.fehbg
+#exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id $HOME/.config/kbd/setup
 
 # force some windows to floating
@@ -22,10 +21,10 @@ for_window [class="Pavucontrol"] floating enable
 # force some applications to a workspace
 assign [class="^discord$"] workspace 1
 assign [class="^Brave-browser$"] workspace 2
-for_window [class="Spotify"] workspace 2
+#for_window [class="Spotify"] workspace 2
 
 #for_window [class="^Brave-browser$"] floating enable
-#for_window [class="Spotify"] floating enable
+for_window [class="Spotify"] floating enable
 
 # force some workspaces in a screen
 workspace 1 output eDP-1
