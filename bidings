@@ -68,6 +68,7 @@ bindsym $mod+Control+Tab focus child
 bindsym $mod+Tab layout toggle splith stacking splitv tabbed
 bindsym $mod+z   fullscreen  toggle 
 bindsym $mod+f   floating toggle
+bindsym $mod+t   layout tabbed
 
 bindsym $mod+v split toggle
 bindsym $mod+Shift+Return mark main; \
