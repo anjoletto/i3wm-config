@@ -10,7 +10,8 @@ exec --no-startup-id autorandr --change
 exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
 #exec --no-startup-id $HOME/.fehbg
-exec --no-startup-id $HOME/.config/kbd/setup
+#exec --no-startup-id $HOME/.config/kbd/setup
+exec --no-startup-id /home/user/.bin/kmonad /home/user/.config/kbd/kmonad/internal.kbd
 
 # force some windows to floating
 for_window [class=".arandr-wrapped"] floating enable
