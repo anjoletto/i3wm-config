@@ -37,7 +37,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 0
   
 # move to other display
-bindsym $mod+s move workspace to output right
+bindsym $mod+Shift+Tab  move workspace to output right
 
 # ---------------------------------------------------------------------------- #
 # window
@@ -47,38 +47,41 @@ bindsym $mod+s move workspace to output right
 bindsym $mod+q kill
 
 # change focus
+# qwerty
 bindsym $mod+h focus left
-bindsym $mod+l focus right
 bindsym $mod+j focus down
 bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# generic
+bindsym $mod+Left  focus left
+bindsym $mod+Right focus right
+bindsym $mod+Up    focus up
+bindsym $mod+Down  focus down
 
 # move windows
+# qwerty
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-bindsym $mod+Shift+s move scratchpad
-bindsym $mod+Control+s scratchpad show
 
-# focus the parent/child container
-bindsym $mod+Shift+Tab   focus parent 
-bindsym $mod+Control+Tab focus child
+# generic
+bindsym $mod+Shift+Left  move left
+bindsym $mod+Shift+Down  move down
+bindsym $mod+Shift+Up    move up
+bindsym $mod+Shift+Right move right
 
 # change layout
-bindsym $mod+Tab layout toggle splith stacking splitv tabbed
-bindsym $mod+z   fullscreen  toggle 
-bindsym $mod+f   floating toggle
-bindsym $mod+t   layout tabbed
-
-bindsym $mod+v split toggle
-bindsym $mod+Shift+Return mark main; \
-                          focus left; \
-                          swap container with mark main; \
-                          focus left
+bindsym $mod+Tab       layout toggle tabbed splith
+bindsym $mod+Control+Tab split toggle
+bindsym $mod+f         floating toggle
+bindsym $mod+z         fullscreen toggle 
 
 # ---------------------------------------------------------------------------- #
+
 # restart inplace
-bindsym $mod+Control+r restart
+bindsym $mod+Shift+Control+Escape restart
 
 # exit 
 bindsym $mod+Shift+Escape exit
