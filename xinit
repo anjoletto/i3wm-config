@@ -14,6 +14,10 @@ exec --no-startup-id blueman-applet &
 exec --no-startup-id /home/user/.bin/kmonad /home/user/.config/kbd/kmonad/internal.kbd
 exec --no-startup-id /home/user/.config/kbd/setup
 
+# start commonly used programs
+exec --no-startup-id brave
+exec --no-startup-id com.discordapp.Discord
+
 # force some windows to floating
 for_window [class=".arandr-wrapped"] floating enable
 for_window [class="blueman-manager-wrapped"] floating enable
@@ -26,7 +30,7 @@ assign [class="^Brave-browser$"] workspace 0
 #for_window [class="Spotify"] workspace 2
 
 #for_window [class="^Brave-browser$"] floating enable
-for_window [class="Spotify"] floating enable
+#for_window [class="Spotify"] floating enable
 
 # force some workspaces in a screen
 workspace 0 output eDP-1
