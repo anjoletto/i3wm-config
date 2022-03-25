@@ -7,7 +7,7 @@ focus_follows_mouse yes
 mouse_warping output
 
 # set default layout for new workspace
-workspace_layout default
+workspace_layout tabbed
 default_orientation horizontal
 
 # display popup if it belongs to fullscreen app
