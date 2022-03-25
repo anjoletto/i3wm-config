@@ -4,9 +4,12 @@
 
 # start when i3 starts
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id sxhkd
+exec_always --no-startup-id sxhkd -c $HOME/.config/sxhkd/custom
+exec_always --no-startup-id sxhkd -c $HOME/.config/sxhkd/main
 #exec_always --no-startup-id picom
+exec --no-startup-id lxqt-policykit-agent
 exec --no-startup-id autorandr --change
+#exec --no-startup-id unclutter -idle 1 &
 exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
 #exec --no-startup-id $HOME/.fehbg
@@ -15,8 +18,8 @@ exec --no-startup-id /home/user/.bin/kmonad /home/user/.config/kbd/kmonad/intern
 exec --no-startup-id /home/user/.config/kbd/setup
 
 # start commonly used programs
-exec --no-startup-id brave
-exec --no-startup-id com.discordapp.Discord
+#exec --no-startup-id brave
+#exec --no-startup-id com.discordapp.Discord
 
 # force some windows to floating
 for_window [class=".arandr-wrapped"] floating enable
