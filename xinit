@@ -14,7 +14,7 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
 #exec --no-startup-id $HOME/.fehbg
 #exec --no-startup-id $HOME/.config/kbd/setup
-exec --no-startup-id /home/user/.bin/kmonad /home/user/.config/kbd/kmonad/internal.kbd
+#exec --no-startup-id /home/user/.bin/kmonad /home/user/.config/kbd/kmonad/internal.kbd
 exec --no-startup-id /home/user/.config/kbd/setup
 
 # start commonly used programs
@@ -29,11 +29,11 @@ for_window [class="Pavucontrol"] floating enable
 
 # force some applications to a workspace
 assign [class="^discord$"] workspace 0
-assign [class="^Brave-browser$"] workspace 0
+#assign [class="^Brave-browser$"] workspace 0
 #for_window [class="Spotify"] workspace 2
 
 #for_window [class="^Brave-browser$"] floating enable
-#for_window [class="Spotify"] floating enable
+for_window [class="Spotify"] floating enable
 
 # force some workspaces in a screen
 workspace 0 output eDP-1

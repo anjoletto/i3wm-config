@@ -87,4 +87,10 @@ bindsym $mod+Shift+Control+Escape restart
 bindsym $mod+Shift+Escape exit
 
 # ---------------------------------------------------------------------------- #
+# scratchpad specific bidings
 
+bindsym $mod+s move scratchpad
+
+bindsym $mod+m [class="Spotify"] scratchpad show
+
+# ---------------------------------------------------------------------------- #
