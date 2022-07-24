@@ -1,5 +1,5 @@
 include i3_config
 include appearance
-include i3-gaps_config
+#include i3-gaps_config
 include xinit
 include bidings
