@@ -37,7 +37,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 0
   
 # move to other display
-bindsym $mod+Shift+Tab  move workspace to output right
+bindsym $mod+Shift+Tab move workspace to output next
 
 # ---------------------------------------------------------------------------- #
 # window
@@ -85,12 +85,5 @@ bindsym $mod+Shift+Control+Escape restart
 
 # exit 
 bindsym $mod+Shift+Escape exit
-
-# ---------------------------------------------------------------------------- #
-# scratchpad specific bidings
-
-bindsym $mod+s move scratchpad
-
-bindsym $mod+m [class="Spotify"] scratchpad show
 
 # ---------------------------------------------------------------------------- #
