@@ -7,7 +7,7 @@ for_window [class=".*"] border pixel 1
 # for_window [class="[.]*"] floating enable
 
 # use coding font for everything
-font pango:FiraCode 8
+font pango:FiraCode 10
 
 # hide borders in edges of screen
 hide_edge_borders smart
